@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+  }
+  
+  :root {
+    --bs-primary: #a91823; /* New primary color */
+    --bs-primary-rgb: 169, 24, 35; /* RGB format of the new primary color */
+  }
+  
+  .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: #920f1b; /* Darker shade for hover state */
+    border-color: #820e17;
+  }
+
+.temple-timings{
+  background: #f4f4f4;
+}
