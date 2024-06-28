@@ -1,4 +1,5 @@
 import { Component,CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,11 +14,22 @@ import { Component,CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit  {
 
-
-  constructor() { }
-
+  navbarCollapsed = true;
+  
   ngOnInit(): void {
-   
+    throw new Error('Method not implemented.');
   }
+  constructor(private router: Router) {}
 
+
+
+  routesCalling(path: string){
+    if(path === "home")  {
+      this.router.navigate(['/']);
+    }else{
+      this.router.navigate(['/temple/'+path]);
+    console.log("routesCalling")
+    }
+    
+  }
 }

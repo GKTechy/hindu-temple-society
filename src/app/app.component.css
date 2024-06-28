@@ -1,9 +1,37 @@
 .grid-container{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column !important;
 }
 
-/* Header and Navbar Container */
+.container-fluid{
+  --bs-gutter-x:0 !important;
+  display: grid;
+  grid-template-rows: auto 1fr; /* Header height is automatic, main section takes the remaining space */
+  height: 100vh; /* Full viewport height */
+
+}
+
+
+/* Header section */
+.header {
+  grid-row: 1 / 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #f1f1f1; /* Background color for header */
+  z-index: 1000; /* Ensure header is above other content */
+  height: 12% !important;
+}
+
+/* Main section */
+.main {
+  grid-row: 2 / 3;
+  margin-top: 12%; /* Adjust this based on the height of the header */
+  background: #ffffff; /* Background color for main section */
+}
+
+
+/* Header and Navbar Container 
 .header-navbar-container {
     position: fixed;
     top: 0;
@@ -11,4 +39,4 @@
     width: 100%;
     z-index: 1000;
   }
-  
+  */

@@ -46,14 +46,18 @@ nav {
   -ms-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
-  background: #f60;
+  background: #f4f4f4;
 }
 
 .dropdown-item{
   padding: 4% 3%;
-  border-bottom: solid 1px #ea5e00;
-  background: #f60;
-  color: #fff;
+  border-bottom: solid 1px #f4f4f4;
+  background: #f4f4f4;
+  color: #000;
   cursor: pointer;
+ 
 }
+
+
+.dropdown-item:hover {background-color: #ddd;}
 

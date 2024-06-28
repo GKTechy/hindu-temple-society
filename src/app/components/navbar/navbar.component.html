@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg shadow">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" (click)="navbarCollapsed = !navbarCollapsed" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav" [class.collapse]="navbarCollapsed">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link"  routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        <a class="nav-link"  ariaCurrentWhenActive="page" (click)="routesCalling('home')">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Temple</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="religionsintemple" routerLinkActive="active" ariaCurrentWhenActive="page">Religions in Temple</a>
-          <a class="dropdown-item" routerLink="temple/TempleHours" routerLinkActive="active" ariaCurrentWhenActive="page">Temple Hours</a>
-          <a href="#" class="dropdown-item" routerLink="temple/Location" routerLinkActive="active">Location</a>
+          <a class="dropdown-item"  (click)="routesCalling('religionsintemple')">Religions in Temple</a>
+          <a class="dropdown-item" (click)="routesCalling('TempleHours')" >Temple Hours</a>
+          <a href="#" class="dropdown-item" (click)="routesCalling('Location')">Location</a>
           <a href="#"class="dropdown-item" routerLink="/temple/Priests" routerLinkActive="active">Priests</a>
           <a href="#"class="dropdown-item" routerLink="/temple/HinduismFAQ" routerLinkActive="active">Hinduism - FAQ</a>
           <a href="#"class="dropdown-item" routerLink="/temple/Newsletters" routerLinkActive="active">Newsletters</a>

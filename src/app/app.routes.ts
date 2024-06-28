@@ -8,10 +8,11 @@ import { HinduismFAQComponent } from './components/temple/hinduism-faq/hinduism-
 import { NewslettersComponent } from './components/temple/newsletters/newsletters.component';
 import { SlokasComponent } from './components/temple/slokas/slokas.component';
 import { TempleMilestonesComponent } from './components/temple/temple-milestones/temple-milestones.component';
+import { TempleReligionsComponent } from './pages/temple-religions/temple-religions.component';
 
 export const routes: Routes = [
     { path: '', component: MainComponent },
-    { path: 'religionsintemple', component: ReligionsinTempleComponent },
+    { path: 'temple/religionsintemple', component: ReligionsinTempleComponent },
     { path: 'temple/TempleHours', component: TempleHoursComponent },
     { path: 'temple/Location', component: LocationComponent },
     { path: 'temple/Priests', component: PriestsComponent },
@@ -19,5 +20,6 @@ export const routes: Routes = [
     { path: 'temple/Newsletters', component: NewslettersComponent },
     { path: 'temple/Slokas', component: SlokasComponent },
     { path: 'temple/TempleMilestones', component: TempleMilestonesComponent },
+    { path: 'temple/pages/templeReligions', component: TempleReligionsComponent },
     // { path: '**', redirectTo: '' }
 ];

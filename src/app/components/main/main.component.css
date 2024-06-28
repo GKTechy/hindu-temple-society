@@ -74,3 +74,11 @@ main {
   .footer-carousel{
     height: 22em !important;
   }
+
+  /* Mobile Media Query */
+@media (max-width: 768px) {
+  .carousel-images{
+    margin-top: 15% !important;
+  }
+
+}
