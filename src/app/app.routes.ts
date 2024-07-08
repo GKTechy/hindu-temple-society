@@ -9,6 +9,11 @@ import { NewslettersComponent } from './components/temple/newsletters/newsletter
 import { SlokasComponent } from './components/temple/slokas/slokas.component';
 import { TempleMilestonesComponent } from './components/temple/temple-milestones/temple-milestones.component';
 import { TempleReligionsComponent } from './pages/temple-religions/temple-religions.component';
+import { TempleEventsComponent } from './components/events/temple-events/temple-events.component';
+import { RegularEventsComponent } from './components/events/regular-events/regular-events.component';
+import { ReligiousDatesComponent } from './components/events/religious-dates/religious-dates.component';
+import { FestivalsDatesComponent } from './components/events/festivals-dates/festivals-dates.component';
+import { PanchangComponent } from './components/events/panchang/panchang.component';
 
 export const routes: Routes = [
     { path: '', component: MainComponent },
@@ -21,5 +26,10 @@ export const routes: Routes = [
     { path: 'temple/Slokas', component: SlokasComponent },
     { path: 'temple/TempleMilestones', component: TempleMilestonesComponent },
     { path: 'temple/pages/templeReligions', component: TempleReligionsComponent },
+    { path: 'events/TempleEvents', component: TempleEventsComponent },
+    { path: 'events/RegularEvents', component: RegularEventsComponent },
+    { path: 'events/ReligiousDates', component: ReligiousDatesComponent },
+    { path: 'events/FestivalsDates', component: FestivalsDatesComponent },
+    { path: 'events/Panchang', component: PanchangComponent },
     // { path: '**', redirectTo: '' }
 ];

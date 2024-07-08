@@ -12,7 +12,7 @@ export class ReligionsinTempleComponent {
   constructor(private router: Router) { }
   
   templePages(path: string){
-    this.router.navigate(['temple/pages/templeReligions/']);
+    this.router.navigate(['temple/pages/templeReligions/'],{ queryParams: { title: path} });
   }
 
 }

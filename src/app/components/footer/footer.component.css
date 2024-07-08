@@ -48,7 +48,9 @@ padding-top: 80px;
 padding-bottom: 40px;
 }
 /*END FOOTER SOCIAL DESIGN*/
-.single_footer{}
+.single_footer{
+    cursor: pointer;
+}
 @media only screen and (max-width:768px) { 
 .single_footer{margin-bottom:30px;}
 }
@@ -83,7 +85,6 @@ line-height: 36px;
 font-size: 15px;
 text-transform: capitalize;
 }
-.single_footer ul li a:hover { color: #ff3666; }
 
 .single_footer_address{}
 .single_footer_address ul{}

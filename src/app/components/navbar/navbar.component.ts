@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit  {
   navbarCollapsed = true;
   
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
   constructor(private router: Router) {}
 
@@ -28,8 +28,19 @@ export class NavbarComponent implements OnInit  {
       this.router.navigate(['/']);
     }else{
       this.router.navigate(['/temple/'+path]);
-    console.log("routesCalling")
+      window.scroll(0,0);
     }
     
+    this.navbarCollapsed = true;
   }
+
+  
+
+  routesEventsCalling(path: string){
+      this.router.navigate(['/events/'+path]);
+      window.scroll(0,0);
+      this.navbarCollapsed = true;
+  }
+
+
 }

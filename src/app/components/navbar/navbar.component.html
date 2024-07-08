@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg shadow">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" (click)="navbarCollapsed = !navbarCollapsed" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" (click)="navbarCollapsed = !navbarCollapsed" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav" [class.collapse]="navbarCollapsed">
@@ -12,23 +12,23 @@
         <div class="dropdown-menu">
           <a class="dropdown-item"  (click)="routesCalling('religionsintemple')">Religions in Temple</a>
           <a class="dropdown-item" (click)="routesCalling('TempleHours')" >Temple Hours</a>
-          <a href="#" class="dropdown-item" (click)="routesCalling('Location')">Location</a>
-          <a href="#"class="dropdown-item" routerLink="/temple/Priests" routerLinkActive="active">Priests</a>
-          <a href="#"class="dropdown-item" routerLink="/temple/HinduismFAQ" routerLinkActive="active">Hinduism - FAQ</a>
-          <a href="#"class="dropdown-item" routerLink="/temple/Newsletters" routerLinkActive="active">Newsletters</a>
-          <a href="#"class="dropdown-item" routerLink="/temple/Slokas" routerLinkActive="active">Slokas</a>
-          <a href="#"class="dropdown-item" routerLink="/temple/TempleMilestones" routerLinkActive="active">Temple Milestones</a>
+          <a class="dropdown-item" (click)="routesCalling('Location')" >Location</a>
+          <a class="dropdown-item" (click)="routesCalling('Priests')" >Priests</a>
+          <a class="dropdown-item" (click)="routesCalling('HinduismFAQ')" >Hinduism - FAQ</a>
+          <a class="dropdown-item" (click)="routesCalling('Newsletters')" >Newsletters</a>
+          <a class="dropdown-item" (click)="routesCalling('Slokas')" >Slokas</a>
+          <a class="dropdown-item" (click)="routesCalling('TempleMilestones')" >Temple Milestones</a>
       </div>
        
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Events</a>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">Temple Events</a>
-          <a href="#" class="dropdown-item">Regular Events</a>
-          <a href="#" class="dropdown-item">Religious Dates</a>
-          <a href="#"class="dropdown-item">Festivals Dates</a>
-          <a href="#"class="dropdown-item">Panchang</a>
+          <a class="dropdown-item" (click)="routesEventsCalling('TempleEvents')">Temple Events</a>
+          <a class="dropdown-item" (click)="routesEventsCalling('RegularEvents')">Regular Events</a>
+          <a class="dropdown-item" (click)="routesEventsCalling('ReligiousDates')">Religious Dates</a>
+          <a class="dropdown-item" (click)="routesEventsCalling('FestivalsDates')">Festivals Dates</a>
+          <a class="dropdown-item" (click)="routesEventsCalling('Panchang')">Panchang</a>
       </div>
       </li>
       <li class="nav-item dropdown">
@@ -40,14 +40,14 @@
           <a href="#"class="dropdown-item">Astrological Inquiry</a>
           <a href="#"class="dropdown-item">Rental Booking</a>
           <a href="#"class="dropdown-item">Priest Booking</a>
-          <a href="#"class="dropdown-item">Bereavement Support</a>
+          <a class="dropdown-item" href="https://hindutemple-lehighvalley.org/assets/_BereavementSupportGuide-Version1.pdf" target="_blank">Bereavement Support</a>
       </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Community</a>
         <div class="dropdown-menu">
-          <a href="#"class="dropdown-item">Welcome Brochure</a>
-          <a href="#"class="dropdown-item">Lehigh Valley Doctors</a>
+          <a class="dropdown-item" href="https://www.hindutemple-lehighvalley.org/HTS/assets/docDetails/HTSWelcomeBrochure.pdf" target="_blank">Welcome Brochure</a>
+          <a class="dropdown-item" href="https://www.hindutemple-lehighvalley.org/HTS/assets/docDetails/SEPT2023.pdf" target="_blank">Lehigh Valley Doctors</a>
           <a href="#"class="dropdown-item">Volunteer</a>
           <a href="#"class="dropdown-item">Community Outreach</a>
       </div>
